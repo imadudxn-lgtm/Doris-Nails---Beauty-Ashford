@@ -1,18 +1,19 @@
 export const SALON = {
-  name: "Amy's Nails",
-  phoneDisplay: "01784 259308",
-  phoneHref: "tel:01784259308",
-  address: "5 Church Rd, Ashford TW15 2UG",
-  instagram: "https://www.instagram.com/amysnails.ashford/?hl=en-gb",
-  facebook: "https://www.facebook.com/p/Amys-Nails-100057611852793/?locale=en_GB",
+  name: "Doris Nails - Beauty Ashford",
+  phoneDisplay: "07742 846868",
+  phoneHref: "tel:07742846868",
+  address: "8 New Parade, Ashford TW15 2UF",
+  instagram: "https://www.instagram.com/doris_nails.beauty_ashford/?hl=en",
+  facebook: "https://www.facebook.com/p/DorisNails-Beauty-Ashford-100090763884834/",
   mapsEmbed:
     "https://www.google.com/maps?q=5+Church+Rd,+Ashford+TW15+2UG&output=embed",
   mapsLink: "https://www.google.com/maps/search/?api=1&query=5+Church+Rd+Ashford+TW15+2UG",
 } as const
 
 export const HOURS = [
-  { day: "Monday – Saturday", time: "9:30 AM – 7:00 PM" },
-  { day: "Sunday", time: "10:00 AM – 4:30 PM" },
+  { day: "Monday – Friday", time: "10:00 AM – 7:00 PM" },
+  { day: "Saturday", time: "10:00 AM – 6:00 PM" },
+  { day: "Sunday", time: "Closed" },
 ] as const
 
 export type Service = {
@@ -36,8 +37,6 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     services: [
       { name: "Acrylic Nails", duration: "45 mins", price: "£45" },
       { name: "Dip Powder Nails", duration: "40 mins", price: "£40" },
-      { name: "Gel Nail Extensions", duration: "50 mins", price: "£50" },
-      { name: "Gel Nails", duration: "35 mins", price: "£35" },
       { name: "Nail Extensions", duration: "50 mins", price: "£45" },
     ],
   },
@@ -46,11 +45,9 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     label: "Manicures & Pedicures",
     blurb: "Classic care to keep hands and feet soft, neat and polished.",
     services: [
-      { name: "Classic Manicure", duration: "30 mins", price: "£25" },
-      { name: "Classic Pedicure", duration: "45 mins", price: "£35" },
-      { name: "Gel Pedicure", duration: "45 mins", price: "£32" },
-      { name: "Manicure & Pedicure Combo", duration: "75 mins", price: "£55" },
-      { name: "Nail Polish Change", duration: "15 mins", price: "£15" },
+      { name: "Manicure", duration: "30 mins", price: "£25" },
+      { name: "Pedicure", duration: "45 mins", price: "£35" },
+      { name: "Manicure and Pedicure", duration: "75 mins", price: "£55" },
     ],
   },
   {
@@ -58,10 +55,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     label: "Specialist Care",
     blurb: "Detailed treatments and bespoke nail art for something special.",
     services: [
-      { name: "Russian Manicure", duration: "60 mins", price: "£50" },
-      { name: "Men's Manicure", duration: "30 mins", price: "£25" },
-      { name: "Men's Pedicure", duration: "40 mins", price: "£35" },
-      { name: "Custom Nail Art", duration: "per nail", price: "From £3" },
+      { name: "Nail Art", duration: "per nail", price: "From £3" },
     ],
   },
 ]
@@ -95,20 +89,24 @@ export const GALLERY = [
 
 export const REVIEWS = [
   {
-    name: "Christina L.",
-    text: "Great place to experience. Professional, attentive, clean and friendly. I love my nails so much!",
+    name: "Lily-Anne Carter-Hillyer",
+    text: "Have visited Doris nails several times for acrylic manicures and gel/shellac pedicure. They always do a lovely job, they listen to exactly what you want and always do great. A nice, welcoming environment too with offerings of drinks and snacks:) couldn’t fault them!",
   },
   {
-    name: "Jell",
-    text: "Had a great experience here. Had a Gel Pedicure for £32, which is very reasonable. They took great care, leaving my feet feeling soft with very neat colour.",
+    name: "Emily Grace",
+    text: "Always so happy with my nails at Doris! Relaxing and clean salon, and lovely staff 🩷 Been going for over a year now, and always happy with my acrylics and gel pedicures!",
   },
   {
-    name: "Victoria G.",
-    text: "The lady that did my nails was very precise and did exactly what I asked. Very good service! I requested colourful French tips and they were perfect.",
+    name: "Chelsie Pettit",
+    text: "Doris and her team are amazing. The designs are always 10/10. I would never go anywhere else now.",
   },
   {
-    name: "Ash M.",
-    text: "I tried Amy's and was very pleased with the service! I accidentally damaged a nail later and they kindly fixed it for free. Amazing customer care.",
+    name: "Lana",
+    text: "Best pedicure I’ve ever had I normally hate getting my feet done but this was the first place I actually enjoyed it the staff are lovely and did so well with my acrylic toenails would 100% recommend and I will be coming back!",
+  },
+  {
+    name: "Vikki Ovenell",
+    text: "Always a pleasure to have my nails done at Doris. From walking in to walking out it’s a relaxing, enjoyable visit every time. The work and art they do is also next level. Wouldn’t go anywhere else. Thank you x",
   },
 ]
 
