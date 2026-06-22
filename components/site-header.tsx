@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { useEffect, useState } from "react"
 import { Phone, Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -27,16 +26,11 @@ export function SiteHeader() {
             : "border-transparent bg-background/30 backdrop-blur-md backdrop-saturate-150",
         )}
       >
-        {/* Logo slot */}
+        {/* Logo Text Slot */}
         <a href="#home" className="flex shrink-0 items-center" aria-label={`${SALON.name} home`}>
-          <Image
-            src="/amys-nails-logo.png"
-            alt={`${SALON.name} logo`}
-            width={180}
-            height={52}
-            priority
-            className="h-9 w-auto sm:h-11"
-          />
+          <span className="font-serif text-lg font-bold tracking-tight text-foreground sm:text-xl">
+            {SALON.name}
+          </span>
         </a>
 
         {/* Center nav */}
