@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Heart, Sparkles, ShieldCheck } from "lucide-react"
 import { Reveal } from "@/components/reveal"
@@ -27,8 +29,8 @@ export function AboutSection() {
         <Reveal>
           <div className="overflow-hidden rounded-3xl shadow-xl">
             <Image
-              src="/salon-interior.jpg"
-              alt="Inside Amy's Nails — a bright, modern salon with white manicure stations and a clean, glossy floor"
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=80"
+              alt="Inside Doris Nails — a bright, modern salon with clean manicure stations and welcoming interior"
               width={1280}
               height={1600}
               className="h-full max-h-[560px] w-full object-cover"
@@ -45,14 +47,14 @@ export function AboutSection() {
             Your local nail studio in the heart of Ashford
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            At Amy&apos;s Nails we&apos;ve built a calm, welcoming space where you can
+            At Doris&apos;s Nails we&apos;ve built a calm, welcoming space where you can
             relax and leave feeling your best. Whether you&apos;re after a quick polish
             change or a fully custom set of nail art, our team takes the time to get
             every detail just right.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Walk-ins are always welcome, and we&apos;re proud of the loyal community of
-            clients who keep coming back.
+            clients who keep coming back to Doris and the team.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
