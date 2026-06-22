@@ -5,9 +5,8 @@ export const SALON = {
   address: "8 New Parade, Ashford TW15 2UF",
   instagram: "https://www.instagram.com/doris_nails.beauty_ashford/?hl=en",
   facebook: "https://www.facebook.com/p/DorisNails-Beauty-Ashford-100090763884834/",
-  mapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.2751433284674!2d-0.4328574!3d51.4530752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487673998ee6ddc5%3A0x6335122a76fbd0ba!2s8%20New%20Parade%2C%20Ashford%20TW15%202UF!5e0!3m2!1sen!2suk!4v1719050000000!5m2!1sen!2suk",
-  mapsLink: "https://maps.app.goo.gl/9Zc9M2w7YJvCun7A6",
+  mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.286381017361!2d-0.43577782338573173!3d51.434552016335195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487673e44fa73ecf%3A0x6b3068e1467a57a1!2s8%20New%20Parade%2C%20Ashford%20TW15%202UF!5e0!3m2!1sen!2suk!4v1719052000000!5m2!1sen!2suk",
+  mapsLink: "https://maps.app.goo.gl/9uK8PZJWhvEpxR88A",
 } as const
 
 export const HOURS = [
@@ -28,7 +27,6 @@ export type ServiceCategory = {
   services: Service[]
 }
 
-// EXACT SERVICES SUBMITTED
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     id: "extensions",
@@ -60,7 +58,6 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
 ]
 
-// ORIGINAL GALLERY IMAGES PRESERVED
 export const GALLERY = [
   {
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic1-PAKrYIUV4vxznKCYGDeRQsZB4bt77c.jpg",
