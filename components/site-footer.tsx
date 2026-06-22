@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Phone, MapPin } from "lucide-react"
 import { SALON, HOURS, NAV_LINKS } from "@/lib/salon-data"
 
@@ -25,15 +24,11 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-3">
-          {/* Brand + logo */}
+          {/* Brand + logo text */}
           <div>
-            <Image
-              src="/amys-nails-logo.png"
-              alt={`${SALON.name} logo`}
-              width={260}
-              height={76}
-              className="h-14 w-auto"
-            />
+            <span className="font-serif text-xl font-bold tracking-tight text-foreground">
+              {SALON.name}
+            </span>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               A friendly high-street nail salon in Ashford. Walk-ins welcome and
               appointments available.
@@ -112,7 +107,7 @@ export function SiteFooter() {
           <p>
             &copy; {new Date().getFullYear()} {SALON.name}. All rights reserved.
           </p>
-          <p>Ashford, Surrey · TW15 2UG</p>
+          <p>Ashford, Surrey · TW15 2UF</p>
         </div>
       </div>
     </footer>
