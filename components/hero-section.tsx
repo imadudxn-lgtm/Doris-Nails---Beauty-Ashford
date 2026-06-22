@@ -1,3 +1,5 @@
+"use client"
+
 import { Phone, MapPin, Sparkles } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 import { SALON } from "@/lib/salon-data"
@@ -6,11 +8,11 @@ export function HeroSection() {
   return (
     <section id="home" className="relative w-full min-h-screen flex items-center justify-center bg-background overflow-hidden">
       
-      {/* Background Image Overlay to remove the empty space */}
+      {/* Background Image Overlay pointing to high-quality Unsplash image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/salon-interior.jpg" 
-          alt="Salon Interior Background" 
+          src="https://images.unsplash.com/photo-1604654894610-df490651e56c?w=1200&auto=format&fit=crop&q=80" 
+          alt="Doris Nails Salon Interior Background" 
           className="w-full h-full object-cover object-center opacity-15 filter blur-[2px]" 
         />
         {/* Soft radial vignette to make the center content pop */}
@@ -37,7 +39,7 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-xl font-medium">
-            Experience bespoke luxury nail care designed to elevate your everyday look. From custom acrylics to pristine gel finishes, our expert artists bring your vision to life. Walk-ins welcome.
+            Experience bespoke luxury nail care designed to elevate your everyday look at Doris Nails. From custom acrylics to pristine gel finishes, our expert artists bring your vision to life. Walk-ins welcome.
           </p>
 
           {/* Primary CTA Action Grid */}
