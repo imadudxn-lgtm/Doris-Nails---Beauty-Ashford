@@ -5,15 +5,14 @@ export const SALON = {
   address: "8 New Parade, Ashford TW15 2UF",
   instagram: "https://www.instagram.com/doris_nails.beauty_ashford/?hl=en",
   facebook: "https://www.facebook.com/p/DorisNails-Beauty-Ashford-100090763884834/",
-  mapsEmbed:
-    "https://www.google.com/maps?q=5+Church+Rd,+Ashford+TW15+2UG&output=embed",
-  mapsLink: "https://www.google.com/maps/search/?api=1&query=5+Church+Rd+Ashford+TW15+2UG",
+  // UPDATE THESE WITH YOUR GOOGLE MAPS LINKS FOR DORIS NAILS:
+  mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.1725595627254!2d-0.4357488!3d51.4005886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876774619d08e5b%3A0xa59e98b488734d85!2s8%20New%20Parade%2C%20Ashford%20TW15%202UF!5e0!3m2!1sen!2suk!4v1719050000000",
+  mapsLink: "https://maps.app.goo.gl/uXv7bX86SgZ7wGvq9",
 } as const
 
 export const HOURS = [
-  { day: "Monday – Friday", time: "10:00 AM – 7:00 PM" },
-  { day: "Saturday", time: "10:00 AM – 6:00 PM" },
-  { day: "Sunday", time: "Closed" },
+  { day: "Monday – Saturday", time: "9:30 AM – 7:00 PM" },
+  { day: "Sunday", time: "10:00 AM – 4:30 PM" },
 ] as const
 
 export type Service = {
@@ -29,6 +28,7 @@ export type ServiceCategory = {
   services: Service[]
 }
 
+// THE UPDATED SERVICES FOR DORIS NAILS:
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     id: "extensions",
