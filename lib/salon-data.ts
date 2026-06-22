@@ -5,8 +5,9 @@ export const SALON = {
   address: "8 New Parade, Ashford TW15 2UF",
   instagram: "https://www.instagram.com/doris_nails.beauty_ashford/?hl=en",
   facebook: "https://www.facebook.com/p/DorisNails-Beauty-Ashford-100090763884834/",
-  mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.273765103443!2d-0.43577312338164024!3d51.45312331435213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487673ca60fa1f97%3A0xe5a1b327b9c9f00!2s8%20New%20Parade%2C%20Ashford%20TW15%202UF!5e0!3m2!1sen!2suk!4v1719050000000!5m2!1sen!2suk",
-  mapsLink: "https://maps.app.goo.gl/w64S432N5A6UAnv4A",
+  mapsEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.2751433284674!2d-0.4328574!3d51.4530752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487673998ee6ddc5%3A0x6335122a76fbd0ba!2s8%20New%20Parade%2C%20Ashford%20TW15%202UF!5e0!3m2!1sen!2suk!4v1719050000000!5m2!1sen!2suk",
+  mapsLink: "https://maps.app.goo.gl/9Zc9M2w7YJvCun7A6",
 } as const
 
 export const HOURS = [
@@ -27,6 +28,7 @@ export type ServiceCategory = {
   services: Service[]
 }
 
+// EXACT SERVICES SUBMITTED
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     id: "extensions",
@@ -58,30 +60,31 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
 ]
 
+// ORIGINAL GALLERY IMAGES PRESERVED
 export const GALLERY = [
   {
-    src: "https://images.unsplash.com/photo-1604654894610-df490651e56c?w=600&auto=format&fit=crop&q=80",
-    alt: "Elegant red professional manicure styling",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic1-PAKrYIUV4vxznKCYGDeRQsZB4bt77c.jpg",
+    alt: "Long coffin nails with classic pink and white French tips and crystal accents",
   },
   {
-    src: "https://images.unsplash.com/photo-1632345031435-8797b2d58045?w=600&auto=format&fit=crop&q=80",
-    alt: "Nail artist applying detailed polish graphics",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic2-yyhjRJwhvfwgFzAwucgPnJvZzqtTIV.jpg",
+    alt: "Blush pink ombre nails with glitter and 3D white flower nail art",
   },
   {
-    src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&auto=format&fit=crop&q=80",
-    alt: "Soft pink gel extensions close up look",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic3-lSG1jCN3FZmCHAWWFEUBId8IFF6575.jpg",
+    alt: "Coffin nails with elegant black and white swirl line art",
   },
   {
-    src: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&auto=format&fit=crop&q=80",
-    alt: "Luxury pedicures treatment station relaxing setting",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic4-Mal2H2hygv1BW5mNkSOMBZ3M5QBLLA.jpg",
+    alt: "Pink nails with neon green swirls and glitter detailing",
   },
   {
-    src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
-    alt: "Luxury salon interior design setup options",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic5-K1WrQ0lK5eHKZ6ukrcAnxh61JuxawK.jpg",
+    alt: "Nude to white ombre nails with colourful butterfly nail art",
   },
   {
-    src: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80",
-    alt: "Modern colorful abstract clean art designs",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic6-by9OzWTS4fHKbvt8I4Hg2wyakvMpnw.jpg",
+    alt: "White French tips with 3D floral nail art and crystals",
   },
 ]
 
